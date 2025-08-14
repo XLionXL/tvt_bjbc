@@ -1,0 +1,39 @@
+100:
+  code: 100
+  name: imageArea
+  path: ./xypConfig/imageArea.yml
+  value:
+  - areaId: 0
+    camId: 0
+    resolution:
+    - 800
+    - 450
+    type: 2
+    userArea:
+    - - 348.00000000000006
+      - 449
+    - - 0
+      - 449
+    - - 0
+      - 314.8125
+    - - 462.0
+      - 215.9375
+    - - 499.31250000000006
+      - 216.5625
+  - areaId: 2
+    camId: 1
+    resolution:
+    - 800
+    - 450
+    type: 2
+    userArea:
+    - - 0
+      - 449
+    - - 0
+      - 305.375
+    - - 606.6875
+      - 187.6875
+    - - 759.3125
+      - 192.375
+    - - 567.3125
+      - 449

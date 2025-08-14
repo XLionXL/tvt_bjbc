@@ -1,0 +1,9 @@
+.idea
+*.log
+*.log*
+__pycache__
+alarmVideo
+log
+python3_main_py
+zip_log
+exe

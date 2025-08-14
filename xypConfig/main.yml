@@ -1,0 +1,178 @@
+111:
+  code: 111
+  name: config111
+  path: ./xypConfig/main.yml
+  value:
+    autoCalibration: 0
+    camera_alarm_score: 45
+    camera_radar_h_offset_rad: 0.015
+    camera_remote_enable: 1
+    camera_udp_port: 10001
+    confidence_min: 0.55
+    cpu_min_to_restart_infer: 16
+    device_type: TXPL200-2/94L
+    fog_enable: 0
+    http_file_port: -1
+    infer_enable: 1
+    joint_alarm_score: 150
+    max_file_num: 1000
+    max_file_size: 2000000000
+    mcu_enable: 0
+    mcu_get_edition_enable: 0
+    mp4_timeSpan_min: 4
+    ntp_enable: 0
+    original_type: XPL120-7/85L
+    pic_timeSpan_min: 5
+    pika_rabbitmq_enable: 0
+    pika_sftp_enable: 0
+    pronounce_english: 0
+    radar_alarm_score: 20
+    radar_decode_head: AAAA5555
+    radar_get_edition_enable: 1
+    radar_udp_port: /dev/ttyTHS2
+    scores_list:
+    - - 10
+      - 25
+      - 50
+      - 3
+    - - 15
+      - 35
+      - 100
+      - 6
+    - - 20
+      - 45
+      - 150
+      - 10
+    sensitivity: 2
+    tcp_server_port: 8888
+    video_save: 3
+    zipx_s_service_restart_time_s: 604800
+113:
+  code: 113
+  name: radarSensitivity
+  path: ./xypConfig/main.yml
+  value:
+    sensitivity: 0
+114:
+  code: 114
+  name: radarScene
+  path: ./xypConfig/main.yml
+  value:
+    scene: 0
+115:
+  code: 115
+  name: radarFrequency
+  path: ./xypConfig/main.yml
+  value:
+    frequency: 0
+116:
+  code: 116
+  name: cameraAlarmObj
+  path: ./xypConfig/main.yml
+  value:
+    alarm_obj:
+    - 0
+117:
+  code: 117
+  name: gpioSwitch
+  path: ./xypConfig/main.yml
+  value:
+    Opt_off: 0
+    Relay_off: 0
+303:
+  code: 303
+  name: AODevice
+  path: ./xypConfig/main.yml
+  value:
+    status: 0
+    volume: 0.5
+310:
+  code: 310
+  name: rebootClock
+  path: ./xypConfig/main.yml
+  value:
+    baseTime: '20010203040506'
+    enable: 0
+    intervalTime: 7d
+    triggerTime: '20250809040506'
+800:
+  code: 800
+  name: pushInfo
+  path: ./xypConfig/main.yml
+  value: 1
+801:
+  code: 801
+  name: weather
+  path: ./xypConfig/main.yml
+  value: 1
+802:
+  code: 802
+  name: frameDiff
+  path: ./xypConfig/main.yml
+  value: 0
+803:
+  code: 803
+  name: radarPort
+  path: ./xypConfig/main.yml
+  value: /dev/ttyTHS2
+804:
+  code: 804
+  name: cameraPort
+  path: ./xypConfig/main.yml
+  value: 10001
+805:
+  code: 805
+  name: device
+  path: ./xypConfig/main.yml
+  value: XPL120-7/85L
+806:
+  code: 806
+  name: sn
+  path: ./xypConfig/main.yml
+  value:
+    language: zh-CN
+    model: TXPL200-2/94L
+    sn: T0807800015237110002
+807:
+  code: 807
+  name: localIP
+  path: ./xypConfig/main.yml
+  value: 127.0.0.1
+808:
+  code: 808
+  name: internalIP
+  path: ./xypConfig/main.yml
+  value: 192.168.1.200
+809:
+  code: 809
+  name: externalIP
+  path: ./xypConfig/main.yml
+  value: 58.20.230.32
+810:
+  code: 810
+  name: isSaveVideo
+  path: ./xypConfig/main.yml
+  value: 0
+811:
+  code: 811
+  name: spaceSize
+  path: ./xypConfig/main.yml
+  value:
+    alarmEvidence:
+      frequency: 1d
+      limit:
+      - 18GB
+    inferLog:
+      frequency: 1d
+      limit:
+      - 1GB
+    myLog:
+      frequency: 1d
+      limit:
+      - 1GB
+    myOldLog:
+      frequency: null
+      limit:
+      - 4800
+      - 0.5Y
+      - 1GB

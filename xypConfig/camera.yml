@@ -1,0 +1,21 @@
+120:
+  code: 120
+  name: cameraStreamLocal
+  path: ./xypConfig/camera.yml
+  value:
+  - rtsp://admin:Admin123@192.168.8.12:8554/0
+  - rtsp://admin:Admin123@192.168.8.11:8554/0
+121:
+  code: 121
+  name: cameraStreamInternal
+  path: ./xypConfig/camera.yml
+  value:
+  - rtsp://admin:Admin123@192.168.1.200:5542/0
+  - rtsp://admin:Admin123@192.168.1.200:5541/0
+122:
+  code: 122
+  name: cameraStreamExternal
+  path: ./xypConfig/camera.yml
+  value:
+  - rtsp://admin:Admin123@58.20.230.32:10083/0
+  - rtsp://admin:Admin123@58.20.230.32:10082/0

@@ -1,0 +1,6 @@
+rtsp://admin:Admin123@10.8.2.124/ch01.264
+rtsp://admin:123456@10.8.2.127/ch01.264
+# rtsp://192.168.1.88/live/0/MAIN
+# rtsp://192.168.1.64/11
+# rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
+# rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov

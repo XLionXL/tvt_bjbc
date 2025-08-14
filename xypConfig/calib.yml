@@ -1,0 +1,25 @@
+106:
+  code: 106
+  name: cameraVanish
+  path: ./xypConfig/calib.yml
+  value:
+    0:
+      default:
+        cameraHeight: 2
+        radPerPixelFovV: 0.0008552113334772216
+        resolution:
+        - 800
+        - 450
+        vanishPoint:
+        - 0
+        - 0
+    1:
+      default:
+        cameraHeight: 2
+        radPerPixelFovV: 0.00017453292519943294
+        resolution:
+        - 800
+        - 450
+        vanishPoint:
+        - 0
+        - 0

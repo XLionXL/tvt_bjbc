@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>service &#8212; 周界系统nano融合程序 V1.22.06.02 文档</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="service">
+<h1>service<a class="headerlink" href="#service" title="永久链接至标题">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="service.html">service package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="service.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-audio-receiver-module">service.Audio_Receiver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-audio-wsserver-module">service.Audio_WSServer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-camera-http-enzhi-module">service.Camera_Http_EnZhi module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-camera-http-yucheng-module">service.Camera_Http_YuCheng module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-camera-link-module">service.Camera_Link module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-camera-train-icr-module">service.Camera_Train_Icr module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-configloadsave-module">service.ConfigLoadSave module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-debugudpsender-module">service.DebugUDPSender module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-firetimer-module">service.FireTimer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-hk-ntp-face-start-module">service.HK_ntp_Face_start module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-alarm-video-module">service.alarm_video module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-buffer-queue-module">service.buffer_queue module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-cameracover-module">service.cameraCover module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-checknativestatus-module">service.checkNativeStatus module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-commdef-module">service.commdef module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-common-thread-module">service.common_thread module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-config-manager-module">service.config_manager module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-configs-module">service.configs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-crc16-module">service.crc16 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-decoder-radar-module">service.decoder_radar module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-deflectiontesting-module">service.deflectionTesting module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-do-match-module">service.do_match module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-estimator-service-module">service.estimator_service module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-global-value-module">service.global_value module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-hysteresis-threshold-module">service.hysteresis_threshold module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-json-config-file-module">service.json_config_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-log-deleter-module">service.log_deleter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-main-controller-module">service.main_controller module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-main-engine-module">service.main_engine module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-moniter-trace-module">service.moniter_trace module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-nano-heartbeat-frame-module">service.nano_heartbeat_frame module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-net-common-module">service.net_common module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-net-transceiver-module">service.net_transceiver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-person-coordinate-module">service.person_coordinate module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-pronounce-module">service.pronounce module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-radar-driver-shibian-module">service.radar_driver_shibian module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-remote-cmd-module">service.remote_cmd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-roi-service-module">service.roi_service module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-rtsp-from-ps-module">service.rtsp_from_ps module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-serialmcu-module">service.serialMCU module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-serial-test-module">service.serial_test module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-speak-module">service.speak module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-syncntpdate-module">service.syncNtpDate module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-system-log-module">service.system_log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-tcp-server-module">service.tcp_server module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-testserialmcu-module">service.testSerialMCU module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-transform-tools-module">service.transform_tools module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-user-pw-module">service.user_pw module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-videocalibration-module">service.videoCalibration module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-videocalibration-linedetect-module">service.videoCalibration_LineDetect module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#service-videocalibration-trace-module">service.videoCalibration_trace module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="service.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">周界系统nano融合程序</a></h1>
+
+
+
+
+
+
+
+
+<h3>导航</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, zzl.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/source/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

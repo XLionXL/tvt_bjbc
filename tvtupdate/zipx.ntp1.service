@@ -1,0 +1,21 @@
+[Install]
+WantedBy=multi-user.target
+
+[Unit]
+Description=zipx-ntp1
+After=network.service
+
+[Service]
+Type=simple
+User=tvt
+Group=root
+Restart=always
+RestartSec=90
+StartLimitInterval=400
+StartLimitBurst=3
+WorkingDirectory=/usr/bin/zipx/ntp_face
+ExecStart=/usr/bin/python3 -u /usr/bin/zipx/ntp_face/syncNtpDate.py
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

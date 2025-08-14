@@ -1,0 +1,16 @@
+112:
+  code: 112
+  name: radarArea
+  path: ./xypConfig/radarArea.yml
+  value:
+  - areaId: 1
+    type: 2
+    userArea:
+    - - -10
+      - 0
+    - - -10
+      - 250
+    - - 10
+      - 250
+    - - 10
+      - 0

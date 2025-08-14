@@ -1,0 +1,1 @@
+sudo journalctl -u zipx.s.service -n 10000 > /ssd/zipx/labview_test.log
