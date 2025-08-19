@@ -1,9 +1,56 @@
-.idea
+# 操作系统相关文件
+.DS_Store               # macOS
+Thumbs.db               # Windows
+*.swp                   # Vim交换文件
+*.swo                   # Vim交换文件
+
+# 编辑器/IDE配置
+.idea/                  # IntelliJ IDEA
+.vscode/                # VS Code
+*.suo                   # Visual Studio
+*.ntvs*                 # Visual Studio
+*.njsproj               # Visual Studio
+*.sln                   # Visual Studio
+*.swp                   # Vi/Vim
+*.swo                   # Vi/Vim
+
+# 日志文件
+logs/
 *.log
-*.log*
-__pycache__
-alarmVideo
-log
-python3_main_py
-zip_log
-exe
+
+# 依赖目录
+node_modules/           # Node.js
+vendor/                 # Composer (PHP)
+__pycache__/            # Python
+*.py[cod]               # Python
+*$py.class              # Python
+
+# 构建输出
+dist/
+build/
+out/
+bin/
+obj/
+
+# 环境变量和配置文件
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example           # 通常保留示例配置
+
+# 临时文件
+tmp/
+temp/
+tools/
+.vscode/
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 图片
+*.jpg
+*.png
+
+# 编译后
+*.pyc

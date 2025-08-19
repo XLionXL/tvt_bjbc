@@ -861,7 +861,6 @@ class MainEngine:
         fog_values_len = len([x for x in camera_fogValues_min if x > 15])
         fog_coef = 0.8 if fog_values_len >= 4 else 0.5  # 相机视野良好，雷达分数乘以小系数，减少雷达误报
         if self.fog_coef_cnt <= 30:
-            print(f"get_fog_coef_dayTime fog_coef={fog_coef} min_index={min_index},<<<{camera_fogValues_min}")
             self.fog_coef_cnt += 1
         return fog_coef
 

@@ -1508,18 +1508,18 @@ class MonitorTrace:
                     self.tx_tieKeYuan_rabbitmq_process(objectInfoVip["position"][0])
                 else:
                     # 暂时不存其他s2
-                    # pass
-                    if (self.nowTime - self.lastSaveImageTime > 5):
-                        self.lastSaveImageTime = self.nowTime
-                        nowTime = int(self.nowTime * 1000)
-                        radarImagePath = self.imagePath.replace(".jpg", "_radar.jpg")
-                        radarBox = []
-                        for obj in self.alarmInfo["objectInfo"]["obj"]:
-                            camId = obj["camId"]
-                            x, y, w, h = self.scaleBoxW(obj["xywh"][camId], camId)
-                            radarBox.append([max(0, x), y + (0 if camId == 0 else 1080), min(1919, w), h])
-                        self.radarDisplay.drawRadarData(radarImagePath, self.alarmInfo["objectInfo"]["track"],self.alarmInfo["objectInfo"]["position"][:1][0])
-                        self.save_c01_radar_pic_callback(3, self.imagePath, radarBox[0:1], nowTime, radarImagePath, 2)
+                    pass
+                    # if (self.nowTime - self.lastSaveImageTime > 5):
+                    #     self.lastSaveImageTime = self.nowTime
+                    #     nowTime = int(self.nowTime * 1000)
+                    #     radarImagePath = self.imagePath.replace(".jpg", "_radar.jpg")
+                    #     radarBox = []
+                    #     for obj in self.alarmInfo["objectInfo"]["obj"]:
+                    #         camId = obj["camId"]
+                    #         x, y, w, h = self.scaleBoxW(obj["xywh"][camId], camId)
+                    #         radarBox.append([max(0, x), y + (0 if camId == 0 else 1080), min(1919, w), h])
+                    #     self.radarDisplay.drawRadarData(radarImagePath, self.alarmInfo["objectInfo"]["track"],self.alarmInfo["objectInfo"]["position"][:1][0])
+                    #     self.save_c01_radar_pic_callback(3, self.imagePath, radarBox[0:1], nowTime, radarImagePath, 2)
             else:
                 if  self.isSaveState2:
                     self.isSaveState2 = False
@@ -1560,19 +1560,19 @@ class MonitorTrace:
                     self.tx_tieKeYuan_rabbitmq_process(objectInfoVip["position"][0])
                 else:
                     # 暂时不存其他s2
-                    # pass
-                    if (self.nowTime - self.lastSaveImageTime > 5):
-                        self.lastSaveImageTime = self.nowTime
-                        nowTime = int(self.nowTime * 1000)
-                        radarImagePath = self.imagePath.replace(".jpg", "_radar.jpg")
-                        radarBox = []
-                        for obj in self.alarmInfo["objectInfo"]["obj"]:
-                            camId = obj["camId"]
-                            x, y, w, h = self.scaleBoxW(obj["xywh"][camId], camId)
-                            radarBox.append([max(0, x), y + (0 if camId == 0 else 1080), min(1919, w), h])
-                        # self.radarDisplay.drawRadarData(radarImagePath, self.alarmInfo["objectInfo"]["track"])
-                        self.radarDisplay.drawRadarData(radarImagePath, self.alarmInfo["objectInfo"]["track"],self.alarmInfo["objectInfo"]["position"][:1][0])
-                        self.save_c01_radar_pic_callback(3, self.imagePath, radarBox[0:1], nowTime, radarImagePath, 2)
+                    pass
+                    # if (self.nowTime - self.lastSaveImageTime > 5):
+                    #     self.lastSaveImageTime = self.nowTime
+                    #     nowTime = int(self.nowTime * 1000)
+                    #     radarImagePath = self.imagePath.replace(".jpg", "_radar.jpg")
+                    #     radarBox = []
+                    #     for obj in self.alarmInfo["objectInfo"]["obj"]:
+                    #         camId = obj["camId"]
+                    #         x, y, w, h = self.scaleBoxW(obj["xywh"][camId], camId)
+                    #         radarBox.append([max(0, x), y + (0 if camId == 0 else 1080), min(1919, w), h])
+                    #     # self.radarDisplay.drawRadarData(radarImagePath, self.alarmInfo["objectInfo"]["track"])
+                    #     self.radarDisplay.drawRadarData(radarImagePath, self.alarmInfo["objectInfo"]["track"],self.alarmInfo["objectInfo"]["position"][:1][0])
+                    #     self.save_c01_radar_pic_callback(3, self.imagePath, radarBox[0:1], nowTime, radarImagePath, 2)
         elif self.state == 3:
             nowTime = int(self.nowTime * 1000)
             radarImagePath = self.imagePath.replace(".jpg", "_radar.jpg")

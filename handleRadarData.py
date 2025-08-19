@@ -1044,7 +1044,6 @@ if __name__ == "__main__":
         }]
     }
     a.areaSet(json112["data"])
-    print(a.areaSendToWeb())
 
 
 
@@ -1083,5 +1082,4 @@ if __name__ == "__main__":
                 plt.scatter(x, y, c="b")
             # print(a.getObjArea([x,y]))
             plt.pause(0.01)
-    print(a.areaSendToWeb())
     plt.show()

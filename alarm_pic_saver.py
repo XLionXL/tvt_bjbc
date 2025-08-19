@@ -57,26 +57,23 @@ class Save_Pic_by_Infer:
 
     def save_c01_radar_pic(self, operation, c01_radar_pic_path, bbox_list=[[100, 100, 100, 100]], timestamp=0, radar_pic_path=None,flag=0):
         # 调用dll存储c01和radar的拼接图片
-
+        print("已进入/usr/bin/zipx/zj-guard-so/libclient.so的调用")
         bbox_list_str = json.dumps(bbox_list).replace(" ", "")
         bbox_list_str_1 = bytes(bbox_list_str, 'utf-8')
         p2_bbox_list_str = c_char_p(bbox_list_str_1)
         timestamp_ = c_long(timestamp)
         str_r = bytes(c01_radar_pic_path, 'utf-8')
         p1_new_camera_pic_path = c_char_p(str_r)
-
-        # str_radar_img = f"/ssd/alarmpic/alarmFrame/20230828_130217_i2360_c1_t2.jpg"
         if radar_pic_path is None:
             if self.save_pic_dll is not None:
                 self.save_pic_dll.MesOfAlarmpic_andRadarpic_AccodingTimestamp(operation, p1_new_camera_pic_path, p2_bbox_list_str, timestamp_)
         else:
             str_radar = bytes(radar_pic_path, 'utf-8')
             p3_radar_img = c_char_p(str_radar)
-
             if self.save_pic_dll is not None:
-                # self.save_pic_dll.start_new2(operation, p1_new_camera_pic_path, p2_bbox_list_str, timestamp_, p3_radar_img)
+                print(f"已经运行到调用dll合并雷达图和相机图了,即将传入的参数为:{operation, p1_new_camera_pic_path, p2_bbox_list_str, timestamp_, p3_radar_img,flag}")
                 self.save_pic_dll.MesOfAlarmpic_andRadarpic_AccodingTimestamp(operation, p1_new_camera_pic_path, p2_bbox_list_str, timestamp_, p3_radar_img,flag)
-
+                print("合并完了")
 
 
     def task_start(self):
@@ -255,7 +252,13 @@ class Save_Pic_by_Infer:
 
 if __name__ == "__main__":
     saver = Save_Pic_by_Infer(pic_timeSpan_min=0.1)
-    # saver.test_longTime_jpg_mp4_save(3, 2, 10)
-    saver.test_saveAlarmJpgMp4()
+    nowTime = int(time.time() * 1000) #当前时间
+    print('--------------------------------')
+    print(f"此时传入的时间戳为：{nowTime}")
+    print('--------------------------------')
+    saver.save_c01_radar_pic(3, "/ssd/alarmpic/alarmFrame/2025-08-16/2025-08-16_05-31-26_i000015_d217.6_a3_w1_s1.jpg", 
+                            [[100, 100, 100, 100]], nowTime,
+                            "/ssd/alarmpic/alarmFrame/2025-08-16/2025-08-16_05-31-26_i000015_d217.6_a3_w1_s1_radar.jpg",1)
+    # saver.test_saveAlarmJpgMp4()
     saver.exit()
     # saveAlarmPicture(3)
